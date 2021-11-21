@@ -1,2 +1,2 @@
-# Go test app
-my first go app
+# Go first app
+my first golang app
