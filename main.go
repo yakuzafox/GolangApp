@@ -47,8 +47,6 @@ func TestPage(w http.ResponseWriter, r *http.Request){
   for i:=0; i<len(pairs);i++{
     tickersBin = append(tickersBin,GetTicker(url,pairs[i]))
   }
-
-
   tmp, _ := template.ParseFiles("templates/tickers.html")
   tmp.Execute(w, tickersBin)
 }
